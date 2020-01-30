@@ -10,6 +10,10 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="responsiveform.css">
+		<link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 601px)" href="responsiveform1.css" />
+		<link rel="stylesheet" media="screen and (max-width: 600px) and (min-width: 351px)" href="responsiveform2.css" />
+		<link rel="stylesheet" media="screen and (max-width: 350px)" href="responsiveform3.css" />
 	</head>
 	<body class="subpage">
 
@@ -26,27 +30,47 @@
 		<!-- Three -->
 			<section id="three" class="wrapper">
 				<h2>Contact Us</h2>
-				<div class="form_style">
-				<form>
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" style="width:40%;"><br/>
-					<label>Email Id:</label>
-					<input type="email" name="email" style="width:40%;"><br/>
-					<label for="branch">Branch:</label>
-					<input type="text" id="Branch" name="Branch" style="width:40%;"></br>
-					<label>Year:</label>
-					<select id="slct1" name="slct1" onchange="populate(this.id,'slct2')" style="width:10%;">
-   					<option value=""></option>
-   					<option value="1">1st</option>
-   					<option value="2">2nd</option>
-   					<option value="3">3rd</option>
-						<option value="4">4th</option>
-					</select><br/>
-					<label for="message">Your Message:</label>
-					<input type="text" id="message" name="message" style="height:8.75em;width:40%;"><br/>
-					<input type="submit" value="Send" style="background-color: #5385c1;margin-left:15%;margin-top:2%;">
+				<div id="envelope">
+				<form action="" method="post">
+				<label>Name</label>
+				<input name="name"  type="text" width="100px;" style="width:40%;">
+				<label>Email Id</label>
+				<input name="email" placeholder="Ex: yourname@gmail.com" type="text" style="width:40%;">
+				<label>Contact Number</label>
+				<input name="contact" placeholder="123456789" type="text" style="width:40%;">
+				<label>Branch</label>
+				<input name="Branch"  type="text" style="width:40%;">
+				<label>Year</label>
+				<div>
+	  		<input type="radio" id="1st" name="year">
+	  			<label for="1st">1st</label>
+				</div><br>
+				<div>
+				<input type="radio" id="2nd" name="year">
+	  			<label for="2nd">2nd</label>
+				</div><br>
+				<div>
+				<input type="radio" id="3rd" name="year">
+	  			<label for="3rd">3rd</label>
+				</div><br>
+				<div>
+				<input type="radio" id="4th" name="year">
+	  			<label for="4th">4th</label>
+				</div><br>
+				<label>Message</label>
+				<textarea cols="15" name="message" placeholder="Message" rows="10" style="width:40%;">
+				</textarea>
+				<input id="submit" type="submit" value="Send Message">
 				</form>
-			</div>
+				</div>
+			</section>
+			<style>
+			#envelope{
+				margin-left: 38%;
+				margin-top: 3%;
+			}
+			</style>
+
 					<!--<div class="flex flex-2">
 						<article>
 							<div class="image fit">
@@ -77,22 +101,22 @@
 			</section>-->
 
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<div class="flex">
-						<div class="copyright">
-							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
-						</div>
-						<ul class="icons">
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
-							<li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
-							<li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
-						</ul>
+		<footer id="footer">
+			<div class="inner">
+				<div class="flex">
+					<div class="copyright">
+						&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>
 					</div>
+					<div style="margin-left:-18%;">
+						<p>Designed by Spectrum Web Team</p>
+					</div>
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/spCETrum/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/spectrum.cetb/?hl=en"><i class="fab fa-instagram"></i></a></li>
+					</ul>
 				</div>
-			</footer>
+			</div>
+		</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
