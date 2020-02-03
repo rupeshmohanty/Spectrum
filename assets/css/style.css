@@ -1,0 +1,51 @@
+body {
+     background: rgb(186, 206, 230);
+     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+     font-size: 14px;
+     color:#000;
+     margin: 0;
+     padding: 0;
+   }
+   .swiper-container {
+     width: 100%;
+   }
+   .swiper-slide {
+     background-position: center;
+     background-size: cover;
+     width: 300px;
+     height: 380px;
+     background-color: #fff;
+   }
+img{
+
+ width: 300px;
+ height:300px;
+}
+
+.swiper-slide .imgBx{
+
+ width: 100%;
+ height:265px;
+ overflow: hidden;
+}
+.swiper-slide .details{
+
+ box-sizing: border-box;
+ padding: 20px;
+}
+.swiper-slide .details h3{
+ margin: 0;
+ padding: 0;
+ font-size: 20px;
+ line-height: 20px;
+ text-align: center;
+}
+.swiper-slide .details span{
+ font-size: 16px;
+ color:#5385c1;
+ font-weight: bold;
+}
+.swiper-slide .details p{
+  color: #5385c1;
+  font-weight: bold;
+}
