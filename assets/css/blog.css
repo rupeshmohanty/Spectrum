@@ -33,7 +33,7 @@ body{
 	text-decoration: none;
 }
 .read-more-btn{
-	background-image: linear-gradient(to right,#1c03b5,#5c8bef);
+	background-color: #5c8bef;
 	padding: 5px 12px 8px;
 	border-radius: 20px;
 	line-height: 20px;
@@ -42,7 +42,7 @@ body{
 	border: none !important;
 }
 .read-more-btn:hover{
-	background-image: linear-gradient(to right,#006417,#00b128);
+	background-color: #00b128;
 	text-decoration: none;
 	color: #fff;
 }
