@@ -2941,8 +2941,8 @@
 /* Banner */
 
 	#banner {
-		padding: 12em 0 10em 0;
-		background-image: url('../../images/banner-04.jpeg');
+		padding: 30em 0 10em 0;
+		background-image: url('../../images/banner-03.jpeg');
 		background-size: cover;
 		background-position: top;
 		background-attachment: fixed;
@@ -3123,5 +3123,4 @@ input[type="submit"].special,
 			background-color: #ffffff;
 			color: #5385c1 !important;
 			border-radius: 24px;
-}
-
+		}
