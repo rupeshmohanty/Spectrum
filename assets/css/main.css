@@ -2664,6 +2664,7 @@
 		.button.special {
 			background-color: #5385c1;
 			color: #ffffff !important;
+			border-radius: 24px;
 		}
 
 			input[type="submit"].special:hover,
@@ -2783,6 +2784,11 @@
 				height: 4em;
 				width: 4em;
 				z-index: 10003;
+			}
+			#header .inner #nav{
+				margin-right: -8%;
+				font-weight: bold;
+    			font-size: 15px;
 			}
 
 				#header a.navPanelToggle .fa {
@@ -2935,8 +2941,8 @@
 /* Banner */
 
 	#banner {
-		padding: 12em 0 10em 0;
-		background-image: url('../../images/banner-04.jpeg');
+		padding: 30em 0 10em 0;
+		background-image: url('../../images/banner-03.jpeg');
 		background-size: cover;
 		background-position: top;
 		background-attachment: fixed;
@@ -3105,4 +3111,16 @@
 				max-width: 85%;
 			}
 
+		}
+#more{
+	display: none;
+}
+input[type="submit"].special,
+		input[type="reset"].special,
+		input[type="button"].special,
+		button.special,
+		.button.special_blue {
+			background-color: #ffffff;
+			color: #5385c1 !important;
+			border-radius: 24px;
 		}
