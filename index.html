@@ -7,7 +7,9 @@
 		<link rel="icon" href="images/sitelogo.jpg">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/achievements.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -25,7 +27,17 @@
 	  	<link rel="stylesheet" type="text/css" href="assets/css/blog.css">
 	  
 	</head>
+
+
+	<a href="#" id="scroll" style="display: none;"><span></span></a>
 	<body>
+
+	<div class="load-wrapper">
+  <div class="drawing" id="loading">
+    <div class="loading-dot"></div>
+  </div>
+  </div>
+
 		<!-- The social media icon bar -->
 			<div class="icon-bar">
 			  <a href="https://www.facebook.com/spCETrum/" class="facebook" target=”_blank”><i class="fa fa-facebook"></i></a>
@@ -259,9 +271,14 @@ Scope to all our fellow mates to make their talents come to limelight.
 One member of the club has won the Hack with Infy conducted by Infosys
 </blockquote>
 
+
 <blockquote>One member of the club has been the second runners up in Robotics Championship conducted by Infosys.
 </blockquote>
 
+=======
+
+<blockquote>One member of the club has been the second runners up in Robotics Championship conducted by Infosys.
+               </blockquote>
 <blockquote>
 	One of the female member of our club has been awarded as Tata Steel Woman of Mettle and has been awarded an internship along with PPO.
 </blockquote>
@@ -377,6 +394,23 @@ Thus our project intends to...
           });
       </script>
       <script>
+
+
+			$(document).ready(function(){ 
+			    $(window).scroll(function(){ 
+			        if ($(this).scrollTop() > 100) { 
+			            $('#scroll').fadeIn(); 
+			        } else { 
+			            $('#scroll').fadeOut(); 
+			        } 
+			    }); 
+			    $('#scroll').click(function(){ 
+			        $("html, body").animate({ scrollTop: 0 }, 600); 
+			        return false; 
+			    }); 
+			});
+=======
+
 		function myFunction() {
 		  var dots = document.getElementById("dots");
 		  var moreText = document.getElementById("more");
