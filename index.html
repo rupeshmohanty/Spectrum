@@ -12,38 +12,36 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/achievements.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/news-events-tabs.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/modal.css">
 
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	    <link rel="stylesheet" type="text/css" href="assets/css/social_media.css">
-	      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	  	<link rel="stylesheet" href="style.css">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	  	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
 	  	<link rel="stylesheet" type="text/css" href="assets/css/blog.css">
-
 	  
-	<style>
-  /* Make the image fully responsive */
-  	.carousel-inner img {
-      	width: 100%;
-      	height: 100%;
-  	}
-  	</style>
 	</head>
+
+
+	<a href="#" id="scroll" style="display: none;"><span></span></a>
 	<body>
 
+	<div class="load-wrapper">
+  <div class="drawing" id="loading">
+    <div class="loading-dot"></div>
+  </div>
+  </div>
 
 		<!-- The social media icon bar -->
 			<div class="icon-bar">
-			  <a href="https://www.facebook.com/spCETrum/" class="facebook"><i class="fa fa-facebook"></i></a>
+			  <a href="https://www.facebook.com/spCETrum/" class="facebook" target=”_blank”><i class="fa fa-facebook"></i></a>
 			  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-			  <a href="https://www.instagram.com/spectrum.cetb/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
-			  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+			  <a href="https://www.instagram.com/spectrum.cetb/?hl=en" class="instagram"  target=”_blank”><i class="fa fa-instagram"></i></a>
+			  <a href="https://www.youtube.com/channel/UCFJdttLXjuUyd6tpMAW2Hhw" class="youtube" target=”_blank”><i class="fa fa-youtube"></i></a>
 			</div>
 
 		<!-- Header -->
@@ -56,6 +54,52 @@
 						<a href="#three">Projects</a>
 						<a href="#blog">Blog</a>
 						<a href="contact_us.html">Contact Us</a>
+						<!-- Trigger/Open The Modal -->
+<button id="myBtn1" class="button special_blue">Events</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+  	<h1 class="modal_heading" style="color: #5385c1;">Our Events</h1>
+    <a href="http://perception.cet.edu.in/techevents" target="_blank"><img src="images/robo_soccer.jpg"></a>
+    <a href="http://perception.cet.edu.in/techevents" target="_blank"><img src="images/fet.jpg"></a>
+    <a href="http://perception.cet.edu.in/techevents" target="_blank"><img src="images/cetronics.jpg"></a>
+    <a href="http://perception.cet.edu.in/techevents" target="_blank"><img src="images/uav_killer.jpg"></a>
+    <span class="close">&times;</span>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
@@ -102,16 +146,61 @@ Scope to all our fellow mates to make their talents come to limelight.
 </div>
 			</section>
 
-		<!-- Two -->
-		<section id="two" class="wrapper style1 special">
-			<div class="inner">
-				<header>
-					<h2>Our Team</h2>
-				</header>
+
+ <!-- Two -->
+    <section id="two" class="wrapper style1 special">
+      <div class="inner">
+        <header>
+          <h2>Our Team</h2>
+        </header>
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="imgBx">
+          <img src="images/soumya bhai.jpg" class="img-responsive">
+        </div>
+        <div class="details">
+          <h3><span>Soumya Ranjan Mohanty</span></h3>
+          <p>Core Member</p>
+					<a href="#" target=”_blank” style="padding: 3px;""><i class="fab fa-facebook fa-2x"></i></a>
+					<a href="#" target=”_blank” style="padding: 4px"><i class="fab fa-instagram fa-2x"></i></a>
+					<a href="https://www.linkedin.com/in/srm43" target=”_blank”><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="imgBx">
+          <img src="images/pritish bhai.jpg" class="img-responsive">
+        </div>
+        <div class="details">
+          <h3><span>Pritish Roshan Ray</span></h3>
+          <p>Core Member</p>
+          <a href="https://m.facebook.com/pritishroshan.ray" style="padding: 3px;" target=”_blank”><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="https://www.instagram.com/pritishroshan/" style="padding: 4px" target=”_blank”><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/pritish-roshan-ray-49921a172" target=”_blank”><i class="fab fa-linkedin fa-2x" target=”_blank”></i></a>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="imgBx">
+          <img src="images/deepak bhai.jpg" class="img-responsive">
+        </div>
+        <div class="details">
+          <h3><span></span></h3>
+          <p>Core Member</p>
+          <a href="" style="padding: 3px;"  target=”_blank”><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="" style="padding: 4px"  target=”_blank”><i class="fab fa-instagram fa-2x"></i></a>
+          <a href=""><i class="fab fa-linkedin fa-2x"  target=”_blank”></i></a>
+        </div>
+      </div>
+      <div class="swiper-pagination" hidden></div>
+  </div><br>
 				<footer style="text-align:center;">
-					<a href="team.html#two" class="button special">See All</a>
+					<a href="team.html#two" class="button special_blue">See All</a>
 				</footer>
 			</section>
+
 <!--Three-->
    <section id="three" class="wrapper">
 				<h2 style="color: #5385c1;">Projects</h2><br/>
@@ -154,30 +243,70 @@ Scope to all our fellow mates to make their talents come to limelight.
 				<header>
 				<h2>Achievements</h2>
 			</header>
-        <h3>Blockquote</h3>
-								<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>
+        <h3></h3>
+			<blockquote>Two groups of the club has qualified for the Texas Instruments India Innovation Challenge.</blockquote>
 
+			<blockquote>Smart Toilet for physically challenged has been awarded fourth in a National Level Competition in India International Science Festival conducted by CSIR, NIOT and IIT Madras
+</blockquote>
+
+			<blockquote>One group of the club has qualified for the Smart India Hackathon 2018
+</blockquote>
+
+<blockquote>Three students of our club had been awarded 3rd in a hackathon conducted by Sankalp Semiconductors
+
+</blockquote>
+
+<span id="dots"></span>
+
+<span id="more">
+<blockquote>There are total 11 number of publications in IEEE Xplore and Springer by the club members in the field of Control and Automation, Industrial Electronics and Soft Computing.
+</blockquote>
+
+<blockquote>Four of our members were selected for the first round in DRUSE 2018 conducted by DRDO.
+</blockquote>
+
+<blockquote>
+One member of the club has won the Hack with Infy conducted by Infosys
+</blockquote>
+
+<blockquote>One member of the club has been the second runners up in Robotics Championship conducted by Infosys.
+</blockquote>
+
+<blockquote>
+	One of the female member of our club has been awarded as Tata Steel Woman of Mettle and has been awarded an internship along with PPO.
+</blockquote>
+
+<blockquote>
+	One of the group of our club has won the Nautilus Championship conducted by IIT, Guwahati.
+</blockquote>
     </div>
+</span>
+<button onclick="myFunction()" id="myBtn" class="button special_blue">See All</button>
 </section>
 
 
-  <section id="blog" class="wrapper special">
+<!--Blog-->
+<!--Blog 1-->
+<section id="blog" class="wrapper special">
         <div class="inner">
           <header class="align-center">
             <h2 style="color: #5385c1;">Blog</h2>
         </header>
-<!--Blog-->
-<!--Blog 1-->
 <div id="blog">
 <div class="row">
 	<div class="col-md-4">
 		<div class="single-blog">
-			<p class="blog-meta">By Suryansu Dash</p>
-			<img src="images/suru_blog.jpg" alt="the image">
-			<h2><a href="https://qr.ae/TmowdV">Why does copper become blue in colour when dipped in silver nitrate solution?
+			<p class="blog-meta">By Pritish Roshan Ray</p>
+			<img src="images/pritish_bhai_blog.jpg" alt="the image">
+			<h2><a href="assets/pdf/iicdc_proposal.pdf" target="_blank">Ultrasonic Radar Based Horn System to
+Reduce noise pollution in big cities.
 </a></h2>
-			<p class="blog-text">Copper on being dipped in Silver Nitrate solution forms Copper Nitrate (it displaces Silver due to their position in the reactivity series). The Copper Nitrate formed is blue in colour in water(thus the solution turns blue from colourless)...</p>
-			<p><a href="https://qr.ae/TmowdV" class="read-more-btn">Read more</a></p>
+			<p class="blog-text">According to the World Health Organisation (WHO), noise is second only to air pollution in the impact it has on health. It is
+Automobile revolution in urban centres has proved to be a big source of noise pollution. Increasing traffic has given rise to
+traffic jams in congested areas where the repeated hooting of horns by impatient drivers pierce the ears of all road.
+Thus our project intends to...
+</p>
+			<p><a href="assets/pdf/iicdc_proposal.pdf" class="read-more-btn" target="_blank">Read more</a></p>
 		</div>
 	</div>
 
@@ -186,10 +315,10 @@ Scope to all our fellow mates to make their talents come to limelight.
 		<div class="single-blog">
 			<p class="blog-meta">By Suryansu Dash</p>
 			<img src="images/suru_blog.jpg" alt="the image">
-			<h2><a href="https://qr.ae/TmowdV">Why does copper become blue in colour when dipped in silver nitrate solution?
+			<h2><a href="https://qr.ae/TmowdV" target="_blank">Why does copper become blue in colour when dipped in silver nitrate solution?
 </a></h2>
 			<p class="blog-text">Copper on being dipped in Silver Nitrate solution forms Copper Nitrate (it displaces Silver due to their position in the reactivity series). The Copper Nitrate formed is blue in colour in water(thus the solution turns blue from colourless)...</p>
-			<p><a href="https://qr.ae/TmowdV" class="read-more-btn">Read more</a></p>
+			<p><a href="https://qr.ae/TmowdV" class="read-more-btn" target="_blank">Read more</a></p>
 		</div>
 	</div>
 
@@ -198,10 +327,10 @@ Scope to all our fellow mates to make their talents come to limelight.
 		<div class="single-blog">
 			<p class="blog-meta">By Suryansu Dash</p>
 			<img src="images/suru_blog.jpg" alt="the image">
-			<h2><a href="https://qr.ae/TmowdV">Why does copper become blue in colour when dipped in silver nitrate solution?
+			<h2><a href="https://qr.ae/TmowdV" target="_blank">Why does copper become blue in colour when dipped in silver nitrate solution?
 </a></h2>
 			<p class="blog-text">Copper on being dipped in Silver Nitrate solution forms Copper Nitrate (it displaces Silver due to their position in the reactivity series). The Copper Nitrate formed is blue in colour in water(thus the solution turns blue from colourless)...</p>
-			<p><a href="https://qr.ae/TmowdV" class="read-more-btn">Read more</a></p>
+			<p><a href="https://qr.ae/TmowdV" class="read-more-btn" target="_blank">Read more</a></p>
 		</div>
 	</div>
 </div>
@@ -215,7 +344,7 @@ Scope to all our fellow mates to make their talents come to limelight.
 							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>
 						</div>
 						<div style="margin-left:-18%;">
-							<p><a href="web_team.html" style="color: #000;">Designed by Spectrum Web Team</a></p>
+							<p><a href="web_team.html#two" style="color: #000;">Designed by Spectrum Web Team</a></p>
 						</div>
 					</div>
 				</div>
@@ -235,6 +364,60 @@ Scope to all our fellow mates to make their talents come to limelight.
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript" src="assets/js/achievements.js"></script>
+			<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	    	 <script>
+          var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+              rotate: 30,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows : true,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+            },
+          });
+      </script>
+      <script>
+
+
+			$(document).ready(function(){ 
+			    $(window).scroll(function(){ 
+			        if ($(this).scrollTop() > 100) { 
+			            $('#scroll').fadeIn(); 
+			        } else { 
+			            $('#scroll').fadeOut(); 
+			        } 
+			    }); 
+			    $('#scroll').click(function(){ 
+			        $("html, body").animate({ scrollTop: 0 }, 600); 
+			        return false; 
+			    }); 
+			});
+		function myFunction() {
+		  var dots = document.getElementById("dots");
+		  var moreText = document.getElementById("more");
+		  var btnText = document.getElementById("myBtn");
+
+		  if (dots.style.display === "none") {
+		    dots.style.display = "inline";
+		    btnText.innerHTML = "See All"; 
+		    moreText.style.display = "none";
+		  } else {
+		    dots.style.display = "none";
+		    btnText.innerHTML = "See Less"; 
+		    moreText.style.display = "inline";
+		  }
+		}
+</script>
 
 	</body>
 </html>
