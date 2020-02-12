@@ -60,3 +60,7 @@
 	});
 
 })(jQuery);
+
+setTimeout(function(){
+	$('.load-wrapper').fadeToggle();
+},1500);
