@@ -1,105 +1,86 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
   <head>
-    <!-- Basic -->
-    <title>
-      Contact Us
-    </title>
+    <title>Contact Us</title>
     <link rel="icon" href="images/sitelogo.jpg">
-    <!-- Define Charset -->
-    <meta charset="utf-8">
-    <!-- Responsive Metatag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- Page Description and Author -->
-    <meta name="description" content="ConBiz - Responsive HTML5 Template">
-    <meta name="author" content="Grayrids">
-    
-    <!-- Bootstrap CSS  -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="screen">
-   
-    <!-- Animate CSS  -->
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" media="screen">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/achievements.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/news-events-tabs.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/modal.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <link rel="stylesheet" type="text/css" href="assets/css/social_media.css">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="assets/css/blog.css">
   </head>
-  <body>
-    <!-- Full Body Container -->
-    <div id="container">
+  <body class="subpage">
 
-      <!-- Start Page Header -->
-      <div class="page-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h1>Contact Us</h1>
-            </div>
-          </div>
+    <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="index.html" class="logo">Spectrum</a>
+          <nav id="nav">
+            <a href="index.html">Home</a>
+            
+
+          </nav>
+          <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
         </div>
-      </div>
-      <!-- End Page Header -->        
-      
-      <!-- Start Content Section -->
-      <section id="content">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9"> 
-
-            <!-- Start Contact Form -->
-            <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+      </header>
+<div class="container-fluid">
+    <div class="container">
+      <h2 class="text-center" id="title">Contact Us</h2>
+      <h3 class="text-center" id="title">If you have any query related to anything just drop the message here!</h3>
+      <hr>
+      <div class="row">
+        <div class="col-sm-12">
+          <form role="form" method="post" action="contact_us.php" enctype="multipart/form-data">
+            <fieldset>              
+              <p class="text-uppercase pull-center"> </p> 
               <div class="form-group">
-                <div class="controls">
-                  <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="controls">
-                  <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="controls">
-                  <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your message subject">
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="controls">
-                  <textarea id="message" rows="7" placeholder="Message" class="form-control" required data-error="Write your message"></textarea>
-                  <div class="help-block with-errors"></div>
-                </div>  
+                <label for="full name">Full Name:</label>
+                <input type="text" name="fname" id="fname" class="form-control input-lg" placeholder="Full name" required>
               </div>
 
-              <button type="submit" id="submit" class="btn btn-success"></i> Send Message</button>
-              <div id="msgSubmit" class="h3 text-center hidden"></div> 
-              <div class="clearfix"></div>   
-
-            </form>     
-            <!-- End Contact Form -->
-
-            </div>
-            <div class="col-md-3">
-              <h2 class="big-title">Contact Info</h2>   
-              <div class="information">              
-                <div class="contact-datails">
-                  <p>College Of Engineering And Technology Bhubaneswar</p>
-                  <p></p>
-                  <p></p>
-                  <p> Sun-Sat (9am-5pm)</p>
-                </div>
+              <div class="form-group">
+                <label for="email">Email Id:</label>
+                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
               </div>
-            </div>
-          </div>
+              <div class="form-group">
+                <label for="branch">Branch:</label>
+                <input type="text" name="branch" id="branch" class="form-control input-lg" placeholder="Branch" required>
+              </div>
+              <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="text" name="year" id="year" class="form-control input-lg" placeholder="Year" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Your message:</label>
+                <textarea type="text" name="message" id="message" class="form-control input-lg" placeholder="Your message" required></textarea>
+              </div>
+                
+                    <input type="submit" id="b" class="btn btn-lg btn-primary" value="Register" style="background-color: #5385c1;">
+              </div>
+            </fieldset>
+          </form>
         </div>
-      </section>
-      <!-- End Content Section  -->
-      
-    </div>
 
-    <!-- Main JS  -->
-    <script type="text/javascript" src="assets/js/jquery-min.js"></script>      
-    <script type="text/javascript" src="assets/js/form-validator.min.js"></script>  
-    <script type="text/javascript" src="assets/js/contact-form-script.js"></script>
+       
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
 
   </body>
 </html>
