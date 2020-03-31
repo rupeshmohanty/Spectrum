@@ -65,6 +65,7 @@ $rows=mysqli_fetch_assoc($admin_result);
 			      <th scope="col">Registration No.</th>
 			      <th scope="col">Skills</th>
 			      <th scope="col">Image</th>
+			      <th scope="col">Fields of interest:</th>
 			      <th scope="col">Projects you have worked before</th>
 			      <th scope="col">What do you want to achieve from this internship?</th>
 			    </tr>
@@ -85,9 +86,10 @@ $rows=mysqli_fetch_assoc($admin_result);
 			      <td><?php echo $user_row['email']; ?></td>
 			      <td><?php echo $user_row['branch']; ?></td>
 			      <td><?php echo $user_row['year']; ?></td>
-			      <td><?php echo $user_row['regd_no']; ?></td>
+			      <td><?php echo $user_row['registration_no']; ?></td>
 			      <td><?php echo $user_row['skills']; ?></td>
 			      <td><?php echo $user_row['image']; ?></td>
+			      <td><?php echo $user_row['fields']; ?></td>
 			      <td><?php echo $user_row['projects']; ?></td>
 			      <td><?php echo $user_row['achieve']; ?></td>
 			    </tr>
