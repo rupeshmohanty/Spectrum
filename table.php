@@ -11,7 +11,7 @@ if(!isset($_SESSION["email"])){
 $email=$_SESSION['email'];
 include('config.php');
 $admin="SELECT * FROM login WHERE email='$email';";
-$admin_result=mysqi_query($con,$admin) or die(mysqli_error($con));
+$admin_result=mysqli_query($con,$admin) or die(mysqli_error($con));
 $rows=mysqli_fetch_assoc($admin_result);
 ?>
 <!DOCTYPE HTML>
@@ -48,11 +48,11 @@ $rows=mysqli_fetch_assoc($admin_result);
 						<a href="index.html">Home</a>
 						<a href="https://docs.google.com/forms/d/e/1FAIpQLScP7xq1G0GnZFgWvs4FzAFcEUT5y2ridVtIaIeHWoTyFEmH4w/viewform?usp=sf_link">Contact Us</a>
 						<a href="#">Welcome <?php echo $rows['email']; ?></a>
-
+						<a href="logout.php">Logout</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
-			</header>
+			</header><br/>
 
 			<!--Tabular data containing information about all the users-->
 			<table class="table">
@@ -102,23 +102,7 @@ $rows=mysqli_fetch_assoc($admin_result);
 				}
 			?>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<div class="flex">
-						<div class="copyright">
-							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
-						</div>
-						<ul class="icons">
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
-							<li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
-							<li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
+			
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
