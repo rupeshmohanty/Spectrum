@@ -9,6 +9,7 @@ $regd_no=$_POST['registration_no'];
 $skills=$_POST['skills'];
 $image=$_FILES['image']['name'];
 $loc="user_image/".$image;
+$fields=$_POST['fields'];
 $projects=$_POST['projects'];
 $achieve=$_POST['achieve'];
 
@@ -21,9 +22,9 @@ if (mysqli_num_rows($duplicate_result)==1) {
 	header('Location:form.php');
 }
 else{
-	$register="INSERT INTO register(fname,email,branch,year,regd_no,skills,image,projects,achieve) VALUES('$fname','$email','$branch','$year','$regd_no','$skills','$image','$projects','$achieve');";
+	$register="INSERT INTO register(fname,email,branch,year,registration_no,skills,image,fields,projects,achieve) VALUES('$fname','$email','$branch','$year','$regd_no','$skills','$image','$fields','$projects','$achieve');";
 	$register_result=mysqli_query($con,$register) or die(mysqli_error($con));
 	move_uploaded_file($_FILES['image']['tmp_name'],$loc);
-	header('Location:success.html');
+	header('Location:success.php');
 }
 ?>
