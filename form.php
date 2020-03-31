@@ -67,7 +67,7 @@
               </div>
                 <div class="form-group">
                   <label for="Registration no.">Registration No.:</label>
-                  <input type="number" name="registration_no" id="registration_no" class="form-control input-lg" placeholder="Registration No." maxlength="10" required>
+                  <input type="text" name="registration_no" id="registration_no" class="form-control input-lg" placeholder="Registration No." maxlength="10" required>
               </div>
               <div class="form-group">
                 <label for="skills">Skills:</label>
@@ -79,15 +79,19 @@
                 <input type="file" name="image" id="image" class="form-control input-lg" placeholder="Insert Image" required>
               </div>
 
+              <div class="form-group">
+                <label for="fields">Fields of interest:</label>
+                <input type="text" name="fields" id="fields" class="form-control input-lg" placeholder="Fields of interest" required>
+              </div>
 
               <div class="form-group">
                 <label for="projects">Projects you have worked before:</label>
-                <textarea type="text" name="projects" id="projects" class="form-control input-lg" placeholder="" required></textarea>
+                <textarea type="text" name="projects" id="projects" class="form-control input-lg" placeholder="" rows="8" required></textarea>
               </div>
 
               <div class="form-group">
                 <label for="achieve">What do you want achieve from this Internship?</label>
-                <textarea type="text" name="achieve" id="achieve" class="form-control input-lg" placeholder="" required></textarea>
+                <textarea type="text" name="achieve" id="achieve" class="form-control input-lg" placeholder="" required rows="8"></textarea>
               </div>
               <div>
                     <input type="submit" id="b" class="btn btn-lg btn-primary" value="Register" style="background-color: #5385c1;">
