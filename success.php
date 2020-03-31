@@ -35,10 +35,10 @@
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
-			</header>
+			</header><br/>
 
 
-<p>You have successfully registered for the Spectrum Internship Drive program.<a href="index.html">Click here to return to the Spectrum homepage</a></p>
+<p style="text-align: center;">You have successfully registered for the Spectrum Internship Drive program.<a href="index.html">Click here to return to the Spectrum homepage</a></p><br/>
 
 			<!-- Footer -->
 			<footer id="footer">
