@@ -9,5 +9,9 @@ if(mysqli_num_rows($login_result)==1){
 	echo '<script type="text/javascript">You have logged in to your account!!!</script>';
 	header('Location:table.php');
 }
+else{
+	header('Location:login_failure.php');
+	}
+
 $_SESSION['email']=$email;
 ?>
