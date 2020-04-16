@@ -27,10 +27,10 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo">Spectrum</a>
+					<a href="index.php" class="logo">Spectrum</a>
 					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="https://docs.google.com/forms/d/e/1FAIpQLScP7xq1G0GnZFgWvs4FzAFcEUT5y2ridVtIaIeHWoTyFEmH4w/viewform?usp=sf_link">Contact Us</a>
+						<a href="index.php">Home</a>
+						<a href="contact_us.html">Contact Us</a>
 
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
@@ -40,21 +40,42 @@
 
 <div class="container-fluid">
     <div class="container">
-      <h2 class="text-center" id="title">Spectrum Internship Drive</h2>
+      <h1 class="text-center" id="title">Spectrum Internship Drive</h1>
       <h3 class="text-center" id="title">Register here for the internship</h3>
       <hr>
       <div class="row">
+
+
+
+
         <div class="col-md-5">
           <form role="form" method="post" action="register.php" enctype="multipart/form-data">
             <fieldset>              
               <p class="text-uppercase pull-center"> REGISTER</p> 
               <div class="form-group">
-                <label for="full name">Full Name:</label>
-                <input type="text" name="fname" id="fname" class="form-control input-lg" placeholder="Full name" required>
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" id="name" class="form-control input-lg" placeholder="Your Name" required>
               </div>
 
               <div class="form-group">
-                <label for="email">Email Id:</label>
+                <label for="uname">User Name:</label>
+                <input type="text" name="uname" id="uname" class="form-control input-lg" placeholder="Select an User Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Set a Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+              </div>
+
+              <div class="form-group">
+                <label for="cpassword">Confirm Password:</label>
+                <input type="password" name="cpassword" id="cpassword" class="form-control input-lg" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail Id:</label>
                 <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
               </div>
               <div class="form-group">
@@ -75,13 +96,23 @@
               </div>
 
               <div class="form-group">
-                <label for="image">Your photo:</label>
-                <input type="file" name="image" id="image" class="form-control input-lg" placeholder="Insert Image" required>
+                <label for="resume">Your Resume:</label>
+                <input type="file" name="resume" id="resume" class="form-control input-lg" placeholder="Insert Resume" required>
               </div>
 
               <div class="form-group">
-                <label for="fields">Fields of interest:</label>
-                <input type="text" name="fields" id="fields" class="form-control input-lg" placeholder="Fields of interest" required>
+                <label for="theme">Themes:</label>
+                <select class="form-control" name="theme">
+                	<option>Click here to see the options</option>
+  					<option value="Web Development">Web Development</option>
+  					<option value="Android app Development">Android app Development</option>
+  					<option value="MATLAB">MATLAB</option>
+  					<option value="Python">Python Development</option>
+  					<option value="Image Processing">Image Processing</option>
+            <option value="Embedded System">Embedded System</option>
+            <option value="Data Science/ML">Data Science/ML</option>
+            <option value="Graphic Designing">Graphic Designing</option>
+				</select>
               </div>
 
               <div class="form-group">
@@ -99,38 +130,41 @@
             </fieldset>
           </form>
         </div>
-        
-        <div class="col-md-2">
+
+
+		<div class="col-md-2">
           <!-------null------>
         </div>
+
         
         <div class="col-md-5">
-            <form role="form" method="post" action="login.php">
+            <form role="form" method="post" action="stud_login.php">
             <fieldset>              
-              <p class="text-uppercase"> Login (Only for Admins)</p> 
+              <p class="text-uppercase">Student Login:</p> 
                 
               <div class="form-group">
-                <label for="email">Your email:</label>
-                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email" required>
+              	<label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="E-mail" required>
               </div>
               <div class="form-group">
-                <label for="password">Password:</label>
+              	<label for="password">Password:</label>
                 <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" required>
               </div>
               <div>
-                <input type="submit" class="btn btn-md btn-primary" value="Sign In" style="background-color: #5385c1">
+                <input type="submit" class="btn btn-md btn-primary" value="Sign In" style="background-color: #5385c1;">
               </div>
                  
             </fieldset>
         </form> 
         </div>
+        
       </div>
     </div>
   </div>
 </section><br>
 		
 
-		<!-- Footer -->
+		<!--==================== Footer ========================-->
 			<footer id="footer">
 				<div class="inner">
 					<div class="flex">
