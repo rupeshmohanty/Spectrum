@@ -20,13 +20,14 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/modal.css">
 
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	    <link rel="stylesheet" type="text/css" href="assets/css/social_media.css">
 	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	  	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
 	  	<link rel="stylesheet" type="text/css" href="assets/css/blog.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/card.css">
 	  
 	</head>
 	<body>
@@ -57,7 +58,7 @@
 						<a href="#two">Team</a>
 						<a href="#three">Projects</a>
 						<a href="#blog">Blog</a>
-						<a href="details.php">Spectrum Internship Drive<i style="color: red">(New)</i></a>
+						<a href="./sid-2019">SID 2019<span class="badge badge-pill badge-danger">New</span></a>
 						<a href="contact_us.html">Contact Us</a>
 
 					</nav>
@@ -71,9 +72,9 @@
 				<p></p>
 			</section>
 
-<marquee behavior="slide" direction="left" scrollamount="2" style="background-color: #5385c1;color: #ffffff;height: 30px;">Spectrum club presents Spectrum Internship Drive for all 1st,2nd and 3rd years. ONLY FOR CET STUDENTS!<a href="form.php" style="color:red;">Register Now</a></marquee>
 			
     <!-- One -->
+      <!-- One -->
       <section id="one" class="wrapper special">
         <div class="inner">
           <header class="align-center">
@@ -88,21 +89,71 @@ Light from different sources contains rays of varying wavelengths, each with its
 disperses these rays in different directions, making the spectrum of white light individually visible.
 Similarly our club “SPECTRUM” is so named as it provides us with different wings homologous to that of the 
 characteristic colours of white light, such as<br><br>
-1.Instrumentation & Control<br><br>
-2.Electronics & Embedded systems<br><br>
-3.Design & Promotion<br><br>
+1.<span class="text-primary" style="color: #000000 !important;">Hardware</span><br><br>
+2.<span class="text-primary" style="color: #000000 !important;">Software</span><br><br>
+3.<span class="text-primary" style="color: #000000 !important;">Design & Promotion</span><br><br>
 
 Under these different wings different areas of electronics engineering practice are covered giving widespread
 Scope to all our fellow mates to make their talents come to limelight.
 </p><br><br>
-<div>
-<img src="images/instrumentation&control.jpg"/>&nbsp;
-&nbsp;
-<img src="images/electronics&embeddedsystems.jpg"/>&nbsp;
-&nbsp;
-<img src="images/design&promotion.jpg"/>&nbsp;
-&nbsp;
-</div>
+	<div class="container">
+			<div class="row">
+				<div class="container-3 col-md-4">
+					<div class="card">
+						<div class="card-front">
+							<div id="hard">
+								HARDWARE
+							</div>
+						</div>
+						<div class="card-back">
+							<div id="hard-branch">
+								<ul>
+									<li>1.VLSI</li>
+									<lI>2.Embeded System</lI>
+									<lI>3.PCB</lI>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-3 col-md-4">
+					<div class="card">
+						<div class="card-front">
+							<div id="soft">
+								SOFTWARE
+							</div>
+						</div>
+						<div class="card-back">
+							<div id="soft-branch">
+								<ul>
+									<li>1.Web Developement</li>
+									<li>2.App Developement</li>
+									<li>3.Competitive Coding</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-3 col-md-4">
+					<div class="card">
+						<div class="card-front">
+							<div id="design">
+								DESIGN &amp;  PROMOTION
+							</div>
+						</div>
+						<div class="card-back">
+							<div id="design-branch">
+								<ul>
+									<li>1.Poster Making</li>
+									<li>2.UI/UX</li>
+									<li>3.Branding</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 			</section>
 
 
@@ -135,7 +186,7 @@ Scope to all our fellow mates to make their talents come to limelight.
         <div class="details">
           <h3><span>Soumya Ranjan Mohanty</span></h3>
           <p>Core Member</p>
-					<a href="#" target=”_blank” style="padding: 3px;""><i class="fab fa-facebook fa-2x"></i></a>
+					<a href="#" target=”_blank” style="padding: 3px;"><i class="fab fa-facebook fa-2x"></i></a>
 					<a href="#" target=”_blank” style="padding: 4px"><i class="fab fa-instagram fa-2x"></i></a>
 					<a href="https://www.linkedin.com/in/srm43" target=”_blank”><i class="fab fa-linkedin fa-2x"></i></a>
         </div>

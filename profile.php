@@ -7,7 +7,7 @@ if (!isset($_SESSION['email'])) {
 }
 $email=$_SESSION['email'];
 $password=$_SESSION['password'];
-$intern="SELECT * FROM register WHERE email='$email' AND password='$password'";
+$intern="SELECT * FROM temp_register WHERE email='$email' AND password='$password'";
 $intern_result=mysqli_query($con,$intern) or die(mysqli_error($con));
 $intern_row=mysqli_fetch_assoc($intern_result);
 ?>
@@ -31,6 +31,8 @@ $intern_row=mysqli_fetch_assoc($intern_result);
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	    <link rel="stylesheet" type="text/css" href="assets/css/social_media.css">
 	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -63,7 +65,20 @@ $wd2=$pdf_row['wd2'];
 $wd3=$pdf_row['wd3'];
 ?>
 
-<table class="table table-hover table-dark" style="align-items: center;">
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-10 col-md-offset-1">
+            <div class="alert alert-primary alert-dismissible fade in text-center" role="alert">
+                <strong>Login Successful!</strong><br/>
+                Welcome <?php echo $intern_row['name']; ?>
+            </div>
+        </div>
+
+  </div>
+</div>
+
+<table class="table" style="align-items: center;">
   <thead>
     <tr>
       <th scope="col">Theme</th>
@@ -84,23 +99,24 @@ $wd3=$pdf_row['wd3'];
 
 <?php
 $_SESSION['theme']=$theme;
+$_SESSION['email']=$email;
 ?>
 
 
 
 
-<form style="position: relative;left: 35%;top: 50%;" method="post" action="submit.php">
+<form style="position: relative;left: 35%;top: 50%;" method="post" action="submit1.php">
 <input style="width: 500px;" type="text" id="link1" name="link1" placeholder="Github Link For Stage1">
 <input type="submit" id="myBtn1" name="form1" value="Submission 1">
 </form><br><br>
 
-<form style="position: relative;left: 35%;top: 50%;" method="post" action="submit.php">
+<form style="position: relative;left: 35%;top: 50%;" method="post" action="submit2.php">
 <input style="width: 500px;" type="text" id="link2" name="link2" placeholder="Github Link For Stage2">
 <input type="submit" id="myBtn2" name="form2" value="Submission 2">
 </form><br><br>
 
 
-<form style="position: relative;left: 35%;top: 50%;" method="post" action="submit.php">
+<form style="position: relative;left: 35%;top: 50%;" method="post" action="submit3.php">
 <input style="width: 500px;" type="text" id="link3" name="link3" placeholder="Github Link For Stage3">
 <input type="submit" id="myBtn3" name="form3" value="Submission 3">
 </form><br><br>
@@ -108,9 +124,9 @@ $_SESSION['theme']=$theme;
 
 <script>
 var x = new Date(); //Today's date
-var y1 = new Date('2020-4-7'); //Next date of Final Date For Submission of task1
-var y2 = new Date('2020-4-9'); //Next date of Final Date For Submission of task 2
-var y3 = new Date('2020-4-11'); //Next date of Final Date For Submission of task3
+var y1 = new Date('2020-5-06'); //Next date of Final Date For Submission of task1
+var y2 = new Date('2020-4-25'); //Next date of Final Date For Submission of task 2
+var y3 = new Date('2020-4-25'); //Next date of Final Date For Submission of task3
 if (x<=y1) {
   document.getElementById("myBtn1").disabled = false;
 }
@@ -163,7 +179,10 @@ else {
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<!--external scripts-->
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
 <?php 
@@ -189,4 +208,4 @@ $submission_result=mysqli_query($con,$submission) or die(mysqli_error($con));
 }
 
  ?>
- <script type="text/javascript">alert("Successfully Submitted!");</script>
+ 

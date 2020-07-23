@@ -1,0 +1,219 @@
+/****************CARD-EFFECT******************/
+* {
+	box-sizing: border-box;
+}
+.container-3 {
+	position: relative;
+	height: 300px;
+	width: 300px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/*background-color: green;*/
+}
+.card {
+	
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 70%;
+	margin: auto;
+	transform-style: preserve-3d;
+	transition: all .5s ease-in-out;
+}
+
+.card:hover {
+	transform: rotateY(180deg);
+	cursor: pointer;
+}
+.card-front {
+	position: absolute;
+	background-image: url('../../images/mozclub1.png');
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background-color: #EAEDF0;
+	backface-visibility: hidden;
+	text-align: center;
+	align-items: center;
+	
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 25px;
+}
+
+.card-front::before {
+	content: '';
+	position: absolute;
+	background-image: linear-gradient(to top, #629ce4, #94ade600, #b8c0e700, #d4d4e900, #ebebebf2);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background-color: rgba(241, 151, 120,.4);
+	transform:rotateY(180deg);
+	text-align: center;
+	align-items: center;
+	
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 20px;
+
+}
+
+.card-back::before {
+	content: '';
+	position: absolute;
+	background-image: linear-gradient(to top, #629ce4, #94ade600, #b8c0e700, #d4d4e900, #ebebebf2);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+
+#hard, #soft, #design {
+	width: 70%;
+	margin: auto;
+	margin-top: 150px;
+	border: 2px solid #F07448;
+	border-style: inset;
+	border-radius: 30px;
+	background-color: rgba(75, 102, 247, 1);
+}
+
+.card > .card-front > #design {
+	font-size: 20px; 
+	padding: 5.5px;
+}
+
+#hard-branch > ul {
+	list-style: none;
+	margin-top: 80px;
+	margin-left: -40px;
+	font-size: 30px;
+	color: #000;
+	text-decoration: underline;
+}
+
+ #soft-branch > ul {
+ 	list-style: none;
+	margin-top: 10px;
+	margin-left: -35px;
+	font-size: 30px;
+	color: #000;
+	text-decoration: underline;
+ }
+
+ #design-branch > ul {
+ 	list-style: none;
+	margin-top: 80px;
+	margin-left: -30px;
+	font-size: 30px;
+	color: #000;
+	text-decoration: underline;
+ }
+
+/****************END OF THE CARD-EFFECT******************/
+
+
+/*******************MEDIA QUERIES*********************/
+
+@media (max-width: 991px) {
+	.container-3 {
+		position: relative;
+		height: 500px;
+		width: 300px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.container-3 .card-back {
+		line-height: 1.6em;
+		font-size: 45px;
+
+	}
+	#soft-branch > ul {
+		margin-top: 100px;
+	}
+	#hard-branch > ul {
+		margin-top: 130px;
+	}
+	#design-branch > ul {
+		margin-top: 140px;
+	}
+	.card {
+		width: 100%;
+		height: 500px;
+		margin: auto;
+	}
+	.container-3, .card-front {
+		background-repeat: no-repeat;
+	}
+	#hard, #soft, #design {
+		width: 80%;
+		padding-top: 5px;
+		margin: auto;
+		margin-top: 250px;
+		border: 2px solid #fff;
+		border-style: inset;
+		border-radius: 30px;
+		background-color: rgba(75, 102, 247, 1);
+
+	}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.container-3 {
+		position: relative;
+		height: 300px;
+		width: 300px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.container-3 .card-back {
+		
+		font-size: 45px;
+
+	}
+	#soft-branch > ul {
+		margin-top: 100px;
+	}
+	#hard-branch > ul {
+		margin-top: 130px;
+	}
+	#design-branch > ul {
+		margin-top: 140px;
+	}
+	.card {
+		width: 100%;
+		height: 300px;
+		margin: auto;
+	}
+	.container-3, .card-front {
+		background-repeat: no-repeat;
+	}
+	#hard, #soft, #design {
+		width: 80%;
+		padding-top: 5px;
+		margin: auto;
+		margin-top: 160px;
+		border: 2px solid #fff;
+		border-style: inset;
+		border-radius: 30px;
+		background-color: rgba(75, 102, 247, 1);
+		/*font-size: 52px;*/
+
+	}
+
+/*******************MEDIA QUERIES END*********************/

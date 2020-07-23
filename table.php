@@ -43,10 +43,10 @@ $rows=mysqli_fetch_assoc($admin_result);
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo">Spectrum</a>
+					<a href="index.php" class="logo">Spectrum</a>
 					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="https://docs.google.com/forms/d/e/1FAIpQLScP7xq1G0GnZFgWvs4FzAFcEUT5y2ridVtIaIeHWoTyFEmH4w/viewform?usp=sf_link">Contact Us</a>
+						<a href="index.php">Home</a>
+						<a href="contact_us.html">Contact Us</a>
 						<a href="#">Welcome <?php echo $rows['email']; ?></a>
 						<a href="logout.php">Logout</a>
 					</nav>
@@ -58,14 +58,15 @@ $rows=mysqli_fetch_assoc($admin_result);
 			<table class="table">
 			  <thead>
 			    <tr>
-			      <th scope="col">Full Name</th>
-			      <th scope="col">Email</th>
+			      <th scope="col">Name</th>
+			      <th scope="col">Username</th>
+						<th scope="col">Email</th>
 			      <th scope="col">Branch</th>
 			      <th scope="col">Year</th>
 			      <th scope="col">Registration No.</th>
 			      <th scope="col">Skills</th>
-			      <th scope="col">Image</th>
-			      <th scope="col">Fields of interest:</th>
+			      <th scope="col">Resume</th>
+			      <th scope="col">Theme</th>
 			      <th scope="col">Projects you have worked before</th>
 			      <th scope="col">What do you want to achieve from this internship?</th>
 			    </tr>
@@ -76,35 +77,34 @@ $rows=mysqli_fetch_assoc($admin_result);
 			$user="SELECT * FROM register";
 			$user_result=mysqli_query($con,$user) or die(mysqli_error($con));
 			while ($user_row=mysqli_fetch_assoc($user_result)) {
-				
 			?>
 
-			
+
 			  <tbody>
 			    <tr>
-			      <td><?php echo $user_row['fname']; ?></td>
+			      <td><?php echo $user_row['name']; ?></td>
+			      <td><?php echo $user_row['uname']; ?></td>
 			      <td><?php echo $user_row['email']; ?></td>
 			      <td><?php echo $user_row['branch']; ?></td>
 			      <td><?php echo $user_row['year']; ?></td>
 			      <td><?php echo $user_row['registration_no']; ?></td>
 			      <td><?php echo $user_row['skills']; ?></td>
-			      <td><?php echo $user_row['image']; ?></td>
-			      <td><?php echo $user_row['fields']; ?></td>
+			      <td><?php echo $user_row['resume']; ?></td>
+			      <td><?php echo $user_row['theme']; ?></td>
 			      <td><?php echo $user_row['projects']; ?></td>
-			      <td><?php echo $user_row['achieve']; ?></td>
+						<td><?php echo $user_row['achieve']; ?></td>
 			    </tr>
 			    <tr>
 			   </tr>
-			</tbody>
-		</table>
 
 
 
 			<?php
 				}
 			?>
+</tbody>
+</table>
 
-			
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -114,5 +114,3 @@ $rows=mysqli_fetch_assoc($admin_result);
 
 	</body>
 </html>
-
-

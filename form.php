@@ -38,6 +38,7 @@
 			</header>
 
 
+
 <div class="container-fluid">
     <div class="container">
       <h1 class="text-center" id="title">Spectrum Internship Drive</h1>
@@ -64,13 +65,13 @@
 
               <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Set a Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Set a Password"
   title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
               </div>
 
               <div class="form-group">
                 <label for="cpassword">Confirm Password:</label>
-                <input type="password" name="cpassword" id="cpassword" class="form-control input-lg" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                <input type="password" name="cpassword" id="cpassword" class="form-control input-lg" placeholder="Confirm Password"
   title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
               </div>
 
@@ -97,7 +98,7 @@
 
               <div class="form-group">
                 <label for="resume">Your Resume:</label>
-                <input type="file" name="resume" id="resume" class="form-control input-lg" placeholder="Insert Resume" required>
+                <input type="file" name="resume" id="resume" class="form-control input-lg" placeholder="Insert Resume">
               </div>
 
               <div class="form-group">

@@ -27,10 +27,10 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo">Spectrum</a>
+					<a href="index.php" class="logo">Spectrum</a>
 					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="https://docs.google.com/forms/d/e/1FAIpQLScP7xq1G0GnZFgWvs4FzAFcEUT5y2ridVtIaIeHWoTyFEmH4w/viewform?usp=sf_link">Contact Us</a>
+						<a href="index.php">Home</a>
+						<a href="contact_us.html">Contact Us</a>
 
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
@@ -38,7 +38,7 @@
 			</header><br/>
 
 
-<p style="text-align: center;">You have successfully registered for the Spectrum Internship Drive program.<a href="index.html">Click here to return to the Spectrum homepage</a></p><br/>
+<p style="text-align: center;">You have successfully registered for the Spectrum Internship Drive program.We will soon notify you.<a href="form.php">Click here and login to your account.</a></p><br/>
 
 			<!-- Footer -->
 			<footer id="footer">

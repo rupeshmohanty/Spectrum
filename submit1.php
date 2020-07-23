@@ -7,6 +7,7 @@ if (!isset($_SESSION['email'])) {
 $email=$_SESSION['email'];
 $theme=$_SESSION['theme'];
 $link1=$_POST['link1'];
-$solution1="INSERT INTO task1(email,theme,link1) VALUES('$email','$theme','$link1') WHERE email='$email' AND theme='$theme'";
+$solution1="INSERT INTO task1(email,theme,link1) VALUES('$email','$theme','$link1')";
 $solution_result1=mysqli_query($con,$solution1) or die(mysqli_error($con));
+header('Location:sent.php');
 ?>

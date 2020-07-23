@@ -31,7 +31,9 @@
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
-			</header><br/>
+			</header>
+
+
 			<form role="form" method="post" action="form.php" enctype="multipart/form-data"><br>
 <button type="submit" class="btn btn-primary" style="float:right;margin-right: 20px;" >Login</button>
 <button type="submit" class="btn btn-primary" style="float:right;margin-right: 5px;">Registration Page</button>

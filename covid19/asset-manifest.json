@@ -1,0 +1,24 @@
+{
+  "files": {
+    "app.js": "/static/js/app.8317a76d.chunk.js",
+    "app.js.map": "/static/js/app.8317a76d.chunk.js.map",
+    "runtime~app.js": "/static/js/runtime~app.34c76111.js",
+    "runtime~app.js.map": "/static/js/runtime~app.34c76111.js.map",
+    "static/js/2.f67d2cb7.chunk.js": "/static/js/2.f67d2cb7.chunk.js",
+    "static/js/2.f67d2cb7.chunk.js.map": "/static/js/2.f67d2cb7.chunk.js.map",
+    "fonts/MaterialCommunityIcons.ttf": "/./fonts/MaterialCommunityIcons.ttf",
+    "favicon-16.png": "/favicon-16.png",
+    "favicon-32.png": "/favicon-32.png",
+    "favicon.ico": "/favicon.ico",
+    "index.html": "/index.html",
+    "manifest.json": "/manifest.json",
+    "serve.json": "/serve.json",
+    "static/media/back-icon-mask.png": "/static/media/back-icon-mask.6165c9d7.png",
+    "static/media/back.jpeg": "/static/media/back.03402b91.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.34c76111.js",
+    "static/js/2.f67d2cb7.chunk.js",
+    "static/js/app.8317a76d.chunk.js"
+  ]
+}
