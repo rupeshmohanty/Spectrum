@@ -1,2 +1,2 @@
-# Spectrum
-Spectrum Club site
+# SPECTRUM
+Spectrum Club cet-b website
